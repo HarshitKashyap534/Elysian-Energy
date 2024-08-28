@@ -1,0 +1,62 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Elysian Energy</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Technologies</a>
+                <a href="#">Investors</a>
+                <a href="GPU.html">Gas Purification</a>
+                <a href="HPU.html">Hydrogen Production</a>
+                <!-- <a href="#">Careers</a> -->
+                <a href="#" class="contact-btn">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-image"></div>
+
+        <h1>Power Storage Unit</h1>
+        <p class="description">Our Power Storage Unit (PSU) is a modular energy storage system designed for high energy density and fast response times. The PSU is a safe, low cost and environmentally friendly alternative to lithium ion batteries for grid storage applications.</p>
+
+        <h2>Cost Analysis</h2>
+        <form id="costAnalysisForm">
+            <div class="form-group">
+                <label for="technologyCost">Technology Cost ($/kWh)</label>
+                <input type="number" id="technologyCost" name="technologyCost">
+            </div>
+            <div class="form-group">
+                <label for="cycleLife">Cycle Life (Cycles)</label>
+                <input type="number" id="cycleLife" name="cycleLife">
+            </div>
+            <div class="form-group">
+                <label for="efficiency">Efficiency (% round trip)</label>
+                <input type="number" id="efficiency" name="efficiency">
+            </div>
+            <div class="form-group">
+                <label for="degradationRate">Degradation Rate (%/year)</label>
+                <input type="number" id="degradationRate" name="degradationRate">
+            </div>
+            <button type="submit" class="calculate-btn">Calculate</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
