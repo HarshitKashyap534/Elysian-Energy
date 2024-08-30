@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysian Energy - Hydrogen Storage Unit</title>
+    <link rel="stylesheet" href="HSU-styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">■ Elysian Energy</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Technology</a>
+            <a href="#">Projects</a>
+            <a href="#">News</a>
+            <a href="#">Careers</a>
+            <a href="#" class="btn btn-primary">Contact</a>
+            <a href="#">Invest</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="elysianenergy.jpg" alt="Hydrogen Storage Unit">
+            </div>
+            <div class="hero-content">
+                <h1>Hydrogen Storage Unit</h1>
+                <p>This technology provides the ability to store hydrogen at scale and deliver it to end-users when and where it is needed most. Elysian's Hydrogen Storage Unit is designed to be modular, scalable, and cost-effective. The system can be deployed in a wide range of locations, from large industrial sites to remote communities. This enables the storage of renewable hydrogen produced from solar, wind, and other sources, providing a reliable and resilient energy supply for a variety of applications.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                    <a href="#" class="btn btn-secondary">Download brochure</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="cost-analysis">
+            <h2>Cost Analysis</h2>
+            <form id="costForm">
+                <div class="form-group">
+                    <label for="cost1">Total project cost (USD)</label>
+                    <input type="number" id="cost1" placeholder="Enter total project cost" required>
+                </div>
+                <div class="form-group">
+                    <label for="cost2">Total project cost (USD)</label>
+                    <input type="number" id="cost2" placeholder="Enter total project cost" required>
+                </div>
+                <div class="form-group">
+                    <label for="cost3">Total project cost (USD)</label>
+                    <input type="number" id="cost3" placeholder="Enter total project cost" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Calculate</button>
+            </form>
+        </section>
+
+        <section class="results" id="results" style="display: none;">
+            <h2>Results</h2>
+            <table>
+                <tr>
+                    <td>Total cost of ownership (USD)</td>
+                    <td id="totalCost">$1,000,000</td>
+                </tr>
+                <tr>
+                    <td>Levelized cost of hydrogen ($/kg)</td>
+                    <td id="levelizedCost">$5.00</td>
+                </tr>
+                <tr>
+                    <td>Payback period (years)</td>
+                    <td id="paybackPeriod">5</td>
+                </tr>
+                <tr>
+                    <td>Internal rate of return (%)</td>
+                    <td id="internalRate">10%</td>
+                </tr>
+            </table>
+            <p class="note">Note: This calculator is for illustrative purposes only and does not constitute financial advice. The results are based on the inputs you provide and may not reflect the actual costs or performance of the Elysian Hydrogen Storage Unit.</p>
+        </section>
+    </main>
+
+    <script src="HSU-script.js"></script>
+</body>
+</html>
